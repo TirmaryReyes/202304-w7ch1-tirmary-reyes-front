@@ -9,3 +9,7 @@ export interface RobotStructure {
     createDate: string;
   };
 }
+
+export interface RobotStoreStructure {
+  robots: RobotStructure[];
+}
