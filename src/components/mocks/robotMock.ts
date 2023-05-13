@@ -12,4 +12,8 @@ const robotMock = [
   },
 ];
 
+export const robotTestStore = {
+  robots: robotMock,
+};
+
 export default robotMock;
