@@ -18,7 +18,7 @@ const App = (): JSX.Element => {
   return (
     <AppStyled>
       <header className="header-container__title">
-        <h1 className="main-title">Robot List</h1>
+        <h1 className="main-title">Robots</h1>
       </header>
     </AppStyled>
   );
