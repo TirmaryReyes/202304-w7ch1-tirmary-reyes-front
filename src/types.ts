@@ -5,8 +5,8 @@ export interface RobotStructure {
 
   characteristics: {
     speed: number;
-    endurance: number;
-    createDate: string;
+    resistance: number;
+    creationDate: string;
   };
 }
 
