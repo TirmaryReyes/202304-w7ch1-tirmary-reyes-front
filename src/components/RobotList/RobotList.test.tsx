@@ -1,7 +1,7 @@
 import { screen } from "@testing-library/react";
 import renderWithProviders from "../../testUtils/testUtils";
 
-import robotMock from "../mocks/robotMock";
+import robotMock from "../../mocks/robotMock";
 import RobotList from "./RobotList";
 import { RobotStructure } from "../../types";
 

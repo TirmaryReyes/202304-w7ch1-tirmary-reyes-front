@@ -1,4 +1,4 @@
-import robotMock from "../../components/mocks/robotMock";
+import robotMock from "../../mocks/robotMock";
 import { RobotStructure } from "../../types";
 import { loadRobotActionCreator, robotReducer } from "./robotsSlice";
 
