@@ -3,15 +3,16 @@ import { styled } from "styled-components";
 const RobotListStyled = styled.section`
   .robotList {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    max-width: 200px;
   }
 
   .list-title {
     font-size: 1.5rem;
-    font-weight: bold;
+    padding: 1rem;
     text-align: center;
+    font-weight: bold;
     width: 100%;
   }
 `;
