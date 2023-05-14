@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: "Poppins"
   
 }
 
@@ -28,10 +28,6 @@ h6,
 p {
   margin: 0;
   font: inherit;
-}
-
-h1{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ul {
