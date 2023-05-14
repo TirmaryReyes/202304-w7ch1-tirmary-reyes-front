@@ -5,8 +5,8 @@ import { store } from "../../store";
 
 describe("Given an App component", () => {
   describe("When rendered", () => {
-    test("Then it should show the text 'Hello world!", () => {
-      const expectedText = /hello world!/i;
+    test("Then it should show a heading with the text 'Robot List", () => {
+      const expectedText = "Robot List";
 
       render(
         <Provider store={store}>
@@ -14,7 +14,10 @@ describe("Given an App component", () => {
         </Provider>
       );
 
-      const text = screen.getByText(expectedText);
+      const text = screen.getByRole("heading", {
+        name: expectedText,
+        level: 1,
+      });
 
       expect(text).toBeInTheDocument();
     });
