@@ -1,6 +1,8 @@
-const robotMock = [
+import { RobotStructure } from "../types";
+
+const robotMock: RobotStructure[] = [
   {
-    id: 656,
+    _id: 656,
     name: "C3PO",
     imageUrl: "https://example.com/robot1.jpg",
 
@@ -11,9 +13,5 @@ const robotMock = [
     },
   },
 ];
-
-export const robotTestStore = {
-  robots: robotMock,
-};
 
 export default robotMock;
