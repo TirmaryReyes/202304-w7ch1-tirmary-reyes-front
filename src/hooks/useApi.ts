@@ -1,13 +1,15 @@
 import { useCallback } from "react";
-import { RobotStructure } from "../types";
+import { RobotStateStructure } from "../types";
 import axios from "axios";
 
 const apiUrl = import.meta.env.VITE_API_URL;
 
 const useApi = () => {
-  const loadRobots = useCallback(async (): Promise<RobotStructure[]> => {
-    const { data } = await axios.get<RobotStructure[]>(`${apiUrl}robots`);
-    return data;
+  const loadRobots = useCallback(async (): Promise<RobotStateStructure> => {
+    const { data: robots } = await axios.get<RobotStateStructure>(
+      `${apiUrl}robots`
+    );
+    return robots;
   }, []);
 
   return { loadRobots };

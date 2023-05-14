@@ -1,5 +1,5 @@
 export interface RobotStructure {
-  id: number;
+  _id: number;
   name: string;
   imageUrl: string;
 
@@ -10,6 +10,6 @@ export interface RobotStructure {
   };
 }
 
-export interface RobotStoreStructure {
+export interface RobotStateStructure {
   robots: RobotStructure[];
 }
