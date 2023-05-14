@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 const AppStyled = styled.header`
-  min-height: 25%;
-  background-color: lightgreen;
+  padding: 1rem;
+  height: 100px;
+  background-color: lightgrey;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 2rem;
-  padding: 2.5rem;
+  justify-content: center;
 
   .header-container__title {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 20px;
   }
 `;
 
