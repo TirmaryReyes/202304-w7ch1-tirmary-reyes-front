@@ -1,11 +1,12 @@
 import { renderHook } from "@testing-library/react";
-import robotMock from "../mocks/robotMock";
 import useApi from "./useApi";
+import { RobotStructure } from "../types";
+import robotMock from "../mocks/robotMock";
 
 describe("Given a useApi custom hook", () => {
   describe("When loadRobots is called", () => {
     test("Then it should return a list of robots", async () => {
-      const expectedList = robotMock;
+      const expectedList: RobotStructure[] = robotMock;
 
       const {
         result: {
@@ -13,9 +14,9 @@ describe("Given a useApi custom hook", () => {
         },
       } = renderHook(() => useApi());
 
-      const robotsList = await loadRobots();
+      const robots = await loadRobots();
 
-      expect(robotsList).toStrictEqual(expectedList);
+      expect(robots.robots).toStrictEqual(expectedList);
     });
   });
 });
