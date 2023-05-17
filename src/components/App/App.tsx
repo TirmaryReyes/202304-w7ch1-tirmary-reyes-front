@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useAppDispatch } from "../../store";
 import { loadRobotActionCreator } from "../../store/robots/robotsSlice";
 import useApi from "../../hooks/useApi";
-import AppStyled from "./AppStyled";
-import RobotList from "../RobotList/RobotList";
+import LoginForm from "../LoginForm/LoginForm";
+import Header from "../Header/Header";
 
 const App = (): JSX.Element => {
   const { loadRobots } = useApi();
@@ -17,12 +17,10 @@ const App = (): JSX.Element => {
   }, [dispatch, loadRobots]);
 
   return (
-    <AppStyled>
-      <header className="header-container__title">
-        <h1 className="main-title">Robots</h1>
-      </header>
-      <RobotList />
-    </AppStyled>
+    <>
+      <Header title={"Robot-Title"} />
+      <LoginForm />
+    </>
   );
 };
 
