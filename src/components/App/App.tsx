@@ -18,7 +18,7 @@ const App = (): JSX.Element => {
 
   return (
     <>
-      <Header title={"Robot-Title"} />
+      <Header title={"Robot List"} />
       <LoginForm />
     </>
   );
